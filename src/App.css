@@ -63,6 +63,7 @@ align-items: center;
   display: flex;
   align-items: center;
   z-index: 99;
+  background: white;
 }
 .header button{
 background: none;
@@ -243,12 +244,322 @@ border-left:  4px solid rgb(250, 44, 109);
       border-radius: 50%;
      }
 
-     /* ////////////////////////////// */
-
-
-     .recent-activties h5 ,.order-status h5{
+     /* ////////////////////////////// clud code */
+     
+    
+    
+    
+    .activities-list {
+      position: relative;
+    }
+    
+    .activities-list::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 105px;
+      width: 2px;
+      height: 100%;
+      background-color: #e0e0e0;
+    }
+    
+    .activity-item {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .activity-time {
+      width: 80px;
+      font-size: 10px;
+      color: #999;
+      text-align: right;
+      padding-right: 20px;
+      flex-shrink: 0;
+    }
+    
+    .activity-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      flex-shrink: 0;
+      margin: 0 10px;
+    }
+    
+    .activity-content {
+      flex-grow: 1;
+    }
+    
+    .activity-type {
+      font-weight: 500;
+      font-size: 12px;
+    }
+    
+    .activity-description {
+      font-size: 10px;
+      color: #666;
+    }
+    .recent-activties h5 ,.order-status h5{
       font-size: 14px;
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
      }
+
+    /* .recent-activties li{
+      padding: 10px 0 10px 0;
+      overflow: hidden;
+     }
+
      
+     .recent-activties .logo{
+      background: red;
+      width:30px;
+      height:30px;
+      color: white;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+     }
+     .recent-activties .timeing{
+      border: 1px solid red;
+      width: 30%;
+      font-size: 15px;
+     }
+     .recent-activties .line{
+      position: absolute;
+      left:50%;
+      width: 1px ;
+      height: 90px;
+      background: red;
+      border: 1px solid rgb(0, 0, 0);
+      z-index: 1;
+     }
+     .recent-activties  h5{
+      font-size: 15px;
+      margin: 0;
+     }
+     .recent-activties  p{
+      font-size: 12px;
+      margin: 0;
+     } */
+
+
+
+
+     /* ////////////////////////////////// */
+     .order-status .section-header button{
+      border-radius: 4px;
+      border: none;
+      color: #666;
+      font-size: 10px;
+      padding: 0 6px 0 6px;
+     }
+     .order-status .section-header button:first-child{
+      background: rgb(250, 44, 109);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      color: white;
+     }
+     .order-status .section-header button:first-child .icon{
+      background: white;
+      color: rgb(250, 44, 109);
+      border-radius: 50%;
+      margin: 0 4px 0 0;
+     }
+     .order-status .section-header input{
+      background: #F0F0F0;
+      border: none;
+      width: 75%;
+      margin-right: 10px;
+      border-radius: 4px;
+      outline: none;
+      font-size: 13px;
+     }
+     .order-list{
+      height: 80%;
+     }
+     .order-list  table{
+      border-collapse: collapse;
+      width: 100%;
+     }
+     .order-list  thead{
+      color: white;
+      background: rgb(40, 41, 48);
+     }
+     .order-list  th{
+      font-size: 12px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 7px;
+
+     }
+     .order-list th:first-child {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+  }
+  .order-list th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.order-list  td{
+  font-size: 13px;
+  padding: 7px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: rgb(44, 44, 44);
+  & section{
+    width: fit-content;
+    font-size: 11px;
+    padding: 2px 4px 2px 4px;
+  }
+  
+}
+
+.switch-page button{
+  background: none;
+  width: 20px;
+  height:20px;
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: center;
+  margin: 0 4px 0 4px;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 0;
+  transition: 0.5s;
+}  
+.switch-page  .active{
+  background: #fc2349;
+  color: white;
+
+}    
+     
+     /* /////////////////////////////// */
+     .card-section .card{
+      background: linear-gradient(to right bottom , rgb(255, 79, 108),rgb(187, 76, 243));
+      border: none;
+     }
+     
+     .card-section .col-lg-3:nth-child(2) .card{
+      background: linear-gradient(to right bottom , rgb(61, 74, 141),rgb(78, 45, 101));
+     }
+     .card-section .col-lg-3:nth-child(3) .card{
+      background: linear-gradient(to right bottom , rgb(101, 207, 231),rgb(58, 72, 117));
+     }
+     .card-section .col-lg-3:nth-child(4) .card{
+      background: linear-gradient(to right bottom , rgb(227, 190, 69),rgb(243, 109, 76));
+     }
+     .card-section .card h5{
+      font-size: 15px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: white;
+    }
+    .card-section .card .icon{
+      font-size: 50px;
+
+    }
+    .card-section .card h2{
+      font-size: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .card-section .card p{
+      font-size: 13px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* //////////////////////////////// */
+    .users h2 ,.product-page h2{
+      font-size: 19px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #222222;
+    }
+    .users input,.product-page input{
+      border:  1px solid rgb(83, 83, 83);
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      outline: none;
+      border-right: none;
+      font-size: 14px;
+    }
+    .users section button ,.product-page section button{
+      border: none;
+      outline: none;
+      background: rgb(250, 44, 109);
+      color: white;
+      font-size: 14px;
+
+    }
+    .user-list .list ,.product-list .list{
+      height: 68vh;
+    }
+    .users table ,.product-page table{
+      border-collapse: collapse;
+    }
+
+    .users .user-list thead,.product-page .product-list thead{
+      background: rgb(33, 33, 33);
+      color: white;
+    }
+    .users .user-list th ,.product-page .product-list thead{
+      padding: 3px;
+      font-size: 14px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .users .user-list th:first-child ,.product-page .product-list th:first-child{
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+  }
+  .users .user-list th:last-child,.product-page .product-list th:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.users .user-list td,.product-page .product-list td{
+  font-size: 14px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 9px 0 9px 0;
+}
+.users .user-list tr{
+  /* border: 2px solid red; */
+}
+.user-list td button,.product-list td button{
+  background:rgb(235, 235, 235);
+  border: none;
+  font-size:26px;
+  width: 26px;
+  height: 26px;
+  color: rgb(0, 0, 0);
+  border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 3px 0 3px;
+   transition: 0.6s;
+}
+.user-list td button:first-child:hover,.product-list  td button:first-child:hover{
+  background:rgba(12, 255, 101, 0.715);
+ 
+}
+.user-list td button:nth-child(2):hover ,.product-list  td button:nth-child(2):hover{
+  background:rgba(12, 36, 255, 0.715);
+  color: rgb(255, 255, 255);
+ 
+}
+.user-list td button:last-child:hover,.product-list  td button:last-child:hover{
+  background:rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
+ 
+}
+
+ .product-list .products-img{
+  width: 50px;
+}

@@ -2,12 +2,11 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import MenuSection from "./components/MenuSection";
 import ActionSection from "./components/ActionSection";
-import { useContext,  } from "react";
-import Contex from "./context/Contex";
+import { useSelector } from "react-redux";
 
 
 function App() {
-  const {MenuSectionStyle ,ActionSectionStyle} = useContext(Contex)
+  const {MenuSectionStyle ,ActionSectionStyle} = useSelector((state)=>state.menuStyle)
 
   return (
     <>

@@ -36,7 +36,7 @@ const DashBoardSection = () => {
                     <li className="mx-2">MONTHLY</li>
                     <li className="mx-2">YEARLY</li>
                   </ul>
-                  <section>
+                  <section className=''>
                     {/* <ul className="list-unstyled d-flex">
                       <li className="d-flex mx-2 align-items-center">
                         <div className="bluewdot  bg-warning rounded-circle"></div>{" "}
