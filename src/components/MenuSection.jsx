@@ -12,13 +12,14 @@ import { IoGitNetworkSharp } from "react-icons/io5";
 import { FaUserGear } from "react-icons/fa6";
 import { IoSettingsSharp } from "react-icons/io5";
 import { FiLogOut } from "react-icons/fi";
-import Contex from "../context/Contex";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 
 
 const MenuSection = () => {
-  const {menuStyle} = useContext(Contex)
+  const {menuStyle} = useSelector((state)=>state.menuStyle)
+
   
   const [menuListOpt, setMenuListOpt] = useState([
     {optionName:"Dashboard", icon:MdSpaceDashboard,active:false},
