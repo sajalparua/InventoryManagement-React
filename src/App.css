@@ -1,0 +1,254 @@
+.app{
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 100vh;
+}
+.app .left-section{
+  width: 80px;
+  transition: 0.5s;
+}
+.app .left{
+  transition: 0.5s;
+}
+.app .right-section{
+  transition: 0.5s; 
+}
+.app .close-menu{
+  display: none;
+  transition: 0.5s;
+}
+/* left menuside css here*/
+
+.comany-tittle{
+  background:linear-gradient(to right bottom , rgb(250, 44, 109) , rgb(173, 40, 235));
+  color: white;
+  text-align: center;
+  padding: 6px;
+  text-overflow: ellipsis;
+  width: 100%;
+  overflow: hidden;
+}
+.comany-tittle h3{
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+}
+
+.menu-section {
+  height: 100vh;
+  overflow: auto;
+  scrollbar-width:none;
+}
+.menu-section li a{
+text-decoration: none;
+color: black;
+font-size: 14px;
+font-weight: 400;
+display: flex;
+align-items: center;
+}
+
+/* right actionside css here */
+
+.app .action-section{
+  width: 100%;
+  height: 100vh;
+  /* border: 3px solid green; */
+  overflow: auto;
+  scrollbar-width: none;
+}
+.header{
+  top: 0;
+  position: sticky;
+  display: flex;
+  align-items: center;
+  z-index: 99;
+}
+.header button{
+background: none;
+border:1px solid rgb(193, 193, 193);
+border-radius: 4px;
+}
+ 
+  .header input{
+width: 350px;
+outline: none;
+border: none;
+}
+
+.header .input-section{
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.header .search-btn{
+ border: none;
+ background: rgb(223, 239, 245);
+ outline: none;
+ padding: 0 10px 0 10px;
+}
+.header .search-btn .icon{
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.header .user-logo{
+  width: 40px;
+  height: 40px;
+  background: red;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.menu-icon{
+  color: rgb(120, 120, 120);
+}
+.menu-section li{
+  border-left:  4px solid  rgb(255, 255, 255);
+  transition: 0.5s;
+  pointer-events: none;
+
+}
+
+.menu-section li:hover{
+border-left:  4px solid rgb(250, 44, 109);
+}
+.menu-section li .link{
+  pointer-events: auto;
+  }
+.menu-section .active-li {
+  border-left:  4px solid rgb(250, 44, 109);
+  & p{
+    color: rgb(250, 44, 109)
+
+  }
+  }
+  .menu-section .active-a{
+    color: rgb(250, 44, 109);
+    }
+    .bluewdot{
+      width: 10px;
+      height: 10px;
+    }
+    .yellowdot{
+      width: 10px;
+      height: 10px;
+    }
+
+
+    /* /////////////////////// */
+
+    .desh-section h5{
+      font-size: 14px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .desh-section p ,.order-status p{
+      font-size: 12px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(90, 89, 89);
+
+    }
+    .desh-section h2{
+      font-size: 30px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+    .desh-section button{
+      font-size: 13px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 8px;
+      background: linear-gradient(to right bottom , rgb(215, 36, 137),rgb(188, 10, 111) );
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .desh-section .option-bar li{
+      font-size: 13px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+      color: rgb(0, 0, 0);
+      border-bottom: 3px solid rgb(255, 255, 255);
+      transition: 0.6s;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+    .desh-section .option-bar .options li:hover{
+      opacity: 1;
+      border-bottom: 3px solid rgb(250, 44, 109) ;
+    }
+    .desh-section .icon{
+      width: 27px;
+      height: 27px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      color: white;
+    }
+   
+    .desh-section .sectionname section{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12px;
+      color: rgb(90, 89, 89);
+    }
+    .desh-section .sectionname .price{
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      color: rgb(30, 30, 30);
+      font-weight: 500;
+    }
+
+
+    /* //////////////////////////// */
+
+    .donut-section h5{
+      font-size: 14px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .donut-section .lower-details h2{
+      font-size: 27px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .donut-section .lower-details .dot1{
+     background: #f2b40a;
+     width: 10px;
+     height: 10px;
+     border-radius: 20px;
+    }
+    .donut-section .lower-details section{
+      display: flex;
+      font-size: 10px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgb(90, 89, 89);
+     }
+    .donut-section .lower-details .dot2{
+      background: #6c05b0;
+      width: 10px;
+      height: 10px;
+      border-radius: 20px;
+     }
+     .donut-section .lower-details .dot3{
+      background: #fc2349;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+     }
+
+     /* ////////////////////////////// */
+
+
+     .recent-activties h5 ,.order-status h5{
+      font-size: 14px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+     }
+     
